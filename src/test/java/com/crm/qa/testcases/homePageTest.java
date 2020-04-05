@@ -36,8 +36,8 @@ public class homePageTest extends testBase{
 	@BeforeMethod
 	public void init(){
 		initialization();	
-		report = testUtil.getInstance();
-		test = report.startTest("Home page Flow"); 
+		//report = testUtil.getInstance();
+		//test = report.startTest("Home page Flow"); 
 		loginPage = new loginPage();
 		homePage = loginPage.loginToApp(prop.getProperty("username"), prop.getProperty("password")); 
 	}
@@ -58,27 +58,35 @@ public class homePageTest extends testBase{
 	public void fillformTest(){
 		report = testUtil.getInstance();
 		test = report.startTest("fill the Home Page Form for Test Data 1"); 
+		
 		HashMap<String,String> datava =  testUtil.gettestdata("forms","homepagetesttwo"); 
-		homePage.fillform(datava.get("firstname"), datava.get("LastName"), datava.get("MiddleName"));
+		homePage.fillform(datava.get("firstname"), datava.get("LastName"), datava.get("MiddleName"));	
 		testUtil.takeScreenShot(driver, test);
 		test.log(LogStatus.PASS, "Created with the Data1");
+		
+		report.endTest(test);
+		report.flush();
 	}
 	
 	@Test(priority=2)
 	public void fillformTest2(){	
 		report = testUtil.getInstance();
-		test.log(LogStatus.INFO, "fill the Home Page Form for Test Data 2");
+		test = report.startTest("fill the Home Page Form for Test Data 2"); 
+		
 		homePage.fillform ("Ashwin2", "Test2", "Test2");	
 		testUtil.takeScreenShot(driver, test);
 		test.log(LogStatus.PASS, "Created with the Data2");
+		
+		report.endTest(test);
+		report.flush();
 	}
 
 	@AfterMethod
 	public void teardown(){
 		System.out.println("close");
 		driver.quit();
-		report.endTest(test);
-		report.flush();
+		//report.endTest(test);
+		//report.flush();
 	}
 	
 }

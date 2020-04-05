@@ -31,8 +31,8 @@ public class loginTest extends testBase {
 	@BeforeMethod
 	public void init(){
 		initialization();
-		report = testUtil.getInstance();
-		test = report.startTest("Login page Flow"); 
+		//report = testUtil.getInstance();
+		//test = report.startTest("Login page Flow"); 
 		loginPage = new loginPage();    //create an instance of the constructor for the login page 
 	}
 	
@@ -47,6 +47,8 @@ public class loginTest extends testBase {
 		Assert.assertEquals(v, "Cogmento CRM");
 		test.log(LogStatus.PASS, "Verify the Title");
 		testUtil.takeScreenShot(driver, test);
+		report.endTest(test);
+		report.flush();
 	}
 	
 	@Test(priority=2)
@@ -56,6 +58,8 @@ public class loginTest extends testBase {
 		homePage = loginPage.loginToApp(prop.getProperty("username"), prop.getProperty("password")); 
 		test.log(LogStatus.INFO, "Click Login Button");
 		testUtil.takeScreenShot(driver, test);
+		report.endTest(test);
+		report.flush();
 	}
 	
 	
@@ -64,7 +68,5 @@ public class loginTest extends testBase {
 	@AfterMethod
 	public void tearDown(){               // close all the browser after the method 
 		driver.quit();
-		report.endTest(test);
-		report.flush();
 	}
 }
