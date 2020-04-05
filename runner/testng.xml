@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Free CRM Application Regression Suite">
+  <test name="Regression">
+    <classes>
+      <class name="com.crm.qa.testcases.loginTest"></class>
+      <class name="com.crm.qa.testcases.homePageTest"></class>
+    </classes>
+  </test> <!-- Regression -->
+</suite> <!-- MavenMyOmniPack -->

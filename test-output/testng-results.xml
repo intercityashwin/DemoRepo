@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Free CRM Application Regression Suite" duration-ms="76593" started-at="2020-04-05T04:44:30Z" finished-at="2020-04-05T04:45:46Z">
+    <groups>
+    </groups>
+    <test name="Regression" duration-ms="76593" started-at="2020-04-05T04:44:30Z" finished-at="2020-04-05T04:45:46Z">
+      <class name="com.crm.qa.testcases.homePageTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.crm.qa.testcases.homePageTest@5e5792a0]" name="init" is-config="true" duration-ms="13111" started-at="2020-04-05T10:14:48Z" finished-at="2020-04-05T10:15:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="fillformTest()[pri:1, instance:com.crm.qa.testcases.homePageTest@5e5792a0]" name="fillformTest" duration-ms="4785" started-at="2020-04-05T10:15:01Z" finished-at="2020-04-05T10:15:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillformTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.crm.qa.testcases.homePageTest@5e5792a0]" name="teardown" is-config="true" duration-ms="917" started-at="2020-04-05T10:15:06Z" finished-at="2020-04-05T10:15:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.crm.qa.testcases.homePageTest@5e5792a0]" name="init" is-config="true" duration-ms="14156" started-at="2020-04-05T10:15:25Z" finished-at="2020-04-05T10:15:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="fillformTest2()[pri:2, instance:com.crm.qa.testcases.homePageTest@5e5792a0]" name="fillformTest2" duration-ms="5980" started-at="2020-04-05T10:15:39Z" finished-at="2020-04-05T10:15:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillformTest2 -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.crm.qa.testcases.homePageTest@5e5792a0]" name="teardown" is-config="true" duration-ms="1103" started-at="2020-04-05T10:15:45Z" finished-at="2020-04-05T10:15:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.crm.qa.testcases.homePageTest -->
+      <class name="com.crm.qa.testcases.loginTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.crm.qa.testcases.loginTest@3ffc5af1]" name="init" is-config="true" duration-ms="15547" started-at="2020-04-05T10:14:30Z" finished-at="2020-04-05T10:14:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="loginPageTitleTest()[pri:1, instance:com.crm.qa.testcases.loginTest@3ffc5af1]" name="loginPageTitleTest" duration-ms="690" started-at="2020-04-05T10:14:45Z" finished-at="2020-04-05T10:14:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPageTitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.loginTest@3ffc5af1]" name="tearDown" is-config="true" duration-ms="1721" started-at="2020-04-05T10:14:46Z" finished-at="2020-04-05T10:14:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.crm.qa.testcases.loginTest@3ffc5af1]" name="init" is-config="true" duration-ms="15733" started-at="2020-04-05T10:15:07Z" finished-at="2020-04-05T10:15:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="loginpageLoginActionTest()[pri:2, instance:com.crm.qa.testcases.loginTest@3ffc5af1]" name="loginpageLoginActionTest" duration-ms="1751" started-at="2020-04-05T10:15:22Z" finished-at="2020-04-05T10:15:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginpageLoginActionTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.loginTest@3ffc5af1]" name="tearDown" is-config="true" duration-ms="1061" started-at="2020-04-05T10:15:24Z" finished-at="2020-04-05T10:15:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.crm.qa.testcases.loginTest -->
+    </test> <!-- Regression -->
+  </suite> <!-- Free CRM Application Regression Suite -->
+</testng-results>
