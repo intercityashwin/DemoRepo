@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Free CRM Application Regression Suite]">
-  <test name="Regression(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="com.crm.qa.testcases.loginTest">
+      <class name="com.crm.qa.testcases.homePageTest">
         <methods>
-          <include name="tearDown"/>
-          <include name="loginPageTitleTest"/>
-          <include name="loginpageLoginActionTest"/>
           <include name="init"/>
+          <include name="deleteAllEntries"/>
+          <include name="teardown"/>
         </methods>
-      </class> <!-- com.crm.qa.testcases.loginTest -->
+      </class> <!-- com.crm.qa.testcases.homePageTest -->
     </classes>
-  </test> <!-- Regression(failed) -->
-</suite> <!-- Failed suite [Free CRM Application Regression Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

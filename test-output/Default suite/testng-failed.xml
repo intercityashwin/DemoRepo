@@ -6,8 +6,7 @@
       <class name="com.crm.qa.testcases.homePageTest">
         <methods>
           <include name="init"/>
-          <include name="fillformTest2"/>
-          <include name="fillformTest"/>
+          <include name="deleteAllEntries"/>
           <include name="teardown"/>
         </methods>
       </class> <!-- com.crm.qa.testcases.homePageTest -->

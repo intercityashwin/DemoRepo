@@ -1,33 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="76501" started-at="2020-04-05T09:03:40Z" finished-at="2020-04-05T09:04:56Z">
+  <suite name="Default suite" duration-ms="34286" started-at="2020-04-06T09:17:53Z" finished-at="2020-04-06T09:18:28Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="76501" started-at="2020-04-05T09:03:40Z" finished-at="2020-04-05T09:04:56Z">
+    <test name="Default test" duration-ms="34286" started-at="2020-04-06T09:17:53Z" finished-at="2020-04-06T09:18:28Z">
       <class name="com.crm.qa.testcases.homePageTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.crm.qa.testcases.homePageTest@29774679]" name="init" is-config="true" duration-ms="31989" started-at="2020-04-05T14:33:40Z" finished-at="2020-04-05T14:34:12Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.crm.qa.testcases.homePageTest@29774679]" name="init" is-config="true" duration-ms="23051" started-at="2020-04-06T14:47:53Z" finished-at="2020-04-06T14:48:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="fillformTest()[pri:1, instance:com.crm.qa.testcases.homePageTest@29774679]" name="fillformTest" duration-ms="6226" started-at="2020-04-05T14:34:12Z" finished-at="2020-04-05T14:34:18Z">
+        <test-method status="PASS" signature="deleteAllEntries()[pri:1, instance:com.crm.qa.testcases.homePageTest@29774679]" name="deleteAllEntries" duration-ms="10375" started-at="2020-04-06T14:48:16Z" finished-at="2020-04-06T14:48:27Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- fillformTest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.crm.qa.testcases.homePageTest@29774679]" name="teardown" is-config="true" duration-ms="1449" started-at="2020-04-05T14:34:18Z" finished-at="2020-04-05T14:34:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="init()[pri:0, instance:com.crm.qa.testcases.homePageTest@29774679]" name="init" is-config="true" duration-ms="29759" started-at="2020-04-05T14:34:19Z" finished-at="2020-04-05T14:34:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="PASS" signature="fillformTest2()[pri:2, instance:com.crm.qa.testcases.homePageTest@29774679]" name="fillformTest2" duration-ms="5745" started-at="2020-04-05T14:34:49Z" finished-at="2020-04-05T14:34:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- fillformTest2 -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.crm.qa.testcases.homePageTest@29774679]" name="teardown" is-config="true" duration-ms="1284" started-at="2020-04-05T14:34:55Z" finished-at="2020-04-05T14:34:56Z">
+        </test-method> <!-- deleteAllEntries -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.crm.qa.testcases.homePageTest@29774679]" name="teardown" is-config="true" duration-ms="829" started-at="2020-04-06T14:48:27Z" finished-at="2020-04-06T14:48:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

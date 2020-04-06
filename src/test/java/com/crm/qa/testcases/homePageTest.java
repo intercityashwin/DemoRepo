@@ -54,7 +54,8 @@ public class homePageTest extends testBase{
 		return data;
 	}*/
 	
-	@Test(priority=1)
+	
+	/*@Test(priority=1)
 	public void fillformTest(){
 		report = testUtil.getInstance();
 		test = report.startTest("fill the Home Page Form for Test Data 1"); 
@@ -79,8 +80,19 @@ public class homePageTest extends testBase{
 		
 		report.endTest(test);
 		report.flush();
+	}*/
+	
+	@Test(priority=1)
+	public void deleteAllEntries(){
+		report = testUtil.getInstance();
+		test = report.startTest("Delete the Entries"); 
+		homePage.deleteEntries();
+		testUtil.takeScreenShot(driver, test);
+		test.log(LogStatus.PASS,"All Entries are deleted successfully");
+		report.endTest(test);
+		report.flush();
 	}
-
+	
 	@AfterMethod
 	public void teardown(){
 		System.out.println("close");
