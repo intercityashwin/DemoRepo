@@ -15,10 +15,14 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.io.FileHandler;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
@@ -67,16 +71,6 @@ public class testUtil {
 		
 		
 		sheet = book.getSheet(SheetName); 
-
-		//Object data [][] = new Object [sheet.getLastRowNum()][sheet.getRow(0).getLastCellNum()]; 
-		
-
-		/*for (int ro = 0 ; ro < sheet.getLastRowNum(); ro ++)
-			
-			for (int col = 0 ; col < sheet.getRow(0).getLastCellNum(); col ++)
-			{
-				data[ro][col] = sheet.getRow( ro ).getCell(col).toString(); 
-			}*/
 		
 		for (int ro = 0 ; ro < sheet.getLastRowNum(); ro ++){
 			String tcName = sheet.getRow(ro).getCell(0).toString().trim(); 
@@ -181,6 +175,14 @@ public class testUtil {
 			report = new ExtentReports(reportPath);
 		}	
 			return report; 
+	}
+	
+	//webdriver explicit wait 
+	
+	public static void explicitwaitsforelem(WebDriver driver, String xpathValue){
+		WebDriverWait wait = new WebDriverWait(driver,100); 
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpathValue))); 
+		
 	}
 		
 	

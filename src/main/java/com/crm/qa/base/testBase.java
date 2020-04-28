@@ -52,12 +52,19 @@ public class testBase {
 			
 			driver.manage().window().maximize();
 			driver.manage().deleteAllCookies();
-			driver.manage().timeouts().implicitlyWait(1, TimeUnit.MINUTES); 
-			driver.manage().timeouts().pageLoadTimeout(1, TimeUnit.MINUTES); 
+			driver.manage().timeouts().implicitlyWait(50, TimeUnit.MINUTES); 
+			driver.manage().timeouts().pageLoadTimeout(50, TimeUnit.MINUTES); 
 			driver.get(prop.getProperty("url"));
 			//driver.get(prop.getProperty("url"));
 	}
 	
+	public static void passedlistner(){
+		System.out.println("PASSED-->> LISTNER CALLED");
+	}
+	
+	public static void failedlistner(){
+		System.out.println("FAILED-->> LISTNER CALLED");
+	}
 
 	
 }

@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="34286" started-at="2020-04-06T09:17:53Z" finished-at="2020-04-06T09:18:28Z">
+  <suite name="Default suite" duration-ms="52199" started-at="2020-04-25T06:46:00Z" finished-at="2020-04-25T06:46:52Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="34286" started-at="2020-04-06T09:17:53Z" finished-at="2020-04-06T09:18:28Z">
-      <class name="com.crm.qa.testcases.homePageTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.crm.qa.testcases.homePageTest@29774679]" name="init" is-config="true" duration-ms="23051" started-at="2020-04-06T14:47:53Z" finished-at="2020-04-06T14:48:16Z">
+    <test name="Default test" duration-ms="52199" started-at="2020-04-25T06:46:00Z" finished-at="2020-04-25T06:46:52Z">
+      <class name="com.crm.qa.testcases.documentsPageTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.crm.qa.testcases.documentsPageTest@26653222]" name="init" is-config="true" duration-ms="43925" started-at="2020-04-25T12:16:00Z" finished-at="2020-04-25T12:16:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="deleteAllEntries()[pri:1, instance:com.crm.qa.testcases.homePageTest@29774679]" name="deleteAllEntries" duration-ms="10375" started-at="2020-04-06T14:48:16Z" finished-at="2020-04-06T14:48:27Z">
+        <test-method status="PASS" signature="docsPageTest()[pri:0, instance:com.crm.qa.testcases.documentsPageTest@26653222]" name="docsPageTest" duration-ms="7357" started-at="2020-04-25T12:16:44Z" finished-at="2020-04-25T12:16:51Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deleteAllEntries -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.crm.qa.testcases.homePageTest@29774679]" name="teardown" is-config="true" duration-ms="829" started-at="2020-04-06T14:48:27Z" finished-at="2020-04-06T14:48:28Z">
+        </test-method> <!-- docsPageTest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.crm.qa.testcases.documentsPageTest@26653222]" name="teardown" is-config="true" duration-ms="862" started-at="2020-04-25T12:16:51Z" finished-at="2020-04-25T12:16:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.crm.qa.testcases.homePageTest -->
+      </class> <!-- com.crm.qa.testcases.documentsPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -47,6 +47,12 @@ public class homePage extends testBase {
 	@FindBy(xpath="//span[text()='Log Out']")
 	WebElement lgnoutbtn;
 	
+	@FindBy (xpath="//span[contains(text(),'Companies')]")
+	WebElement  companieslink; 
+	
+	@FindBy (xpath="//span[contains(text(),'Documents')]")
+	WebElement documentLink; 
+	
 	public homePage(){
 		PageFactory.initElements(driver, this); 
 	}
@@ -96,6 +102,17 @@ public class homePage extends testBase {
 		contactslink.click();
 		return new contactsPage(); 
 		
+	}
+	
+	public companiesPage clickonCompanies(){
+		companieslink.click();
+		return new companiesPage(); 
+	}
+	
+	public documentsPage navigatetoDocuments(){
+		testUtil.explicitwaitsforelem(driver, "//span[contains(text(),'Documents')]");
+		documentLink.click();
+		return new documentsPage(); 
 	}
 
 }
